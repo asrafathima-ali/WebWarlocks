@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block head %}
+<title>Home</title>
+
+{% endblock %}
+
+{% block body %}
+
+  <!--Hero 1 Start-->
+
+    <div class=" header-next text-dark pt-5 pb-5">
+        <div class="text-center  pt-4 pb-4">
+            <h1 class="display-1 text-danger cGreen me-2 ms-2">Tech Tune Motors</h1>
+            <p class="fs-4 mt-3">Online Car Service Appointment Booking</p>
+            <a type="button" class="btn btn-danger shadow  mt-0.5" href="{% url 'booking' %}">Book Your Slot</a>
+        </div>
+    </div>
+
+    <section id="features" class="white-section">
+      <div class="container-fluid">
+    
+        <div class="row">
+          <div class="col-lg-4 feature-box">
+            <h3 class="feature-title">Mode of Payment</h3>
+            <p>Cash, Master Card, Visa Card, Debit Cards, Credit Card</p>
+          </div>
+    
+          <div class="col-lg-4 feature-box">
+            <h3 class="feature-title">Year of Establishment</h3>
+            <p style="text-align:center">2018</p>    
+          </div>
+    
+          <div class="col-lg-4 feature-box">
+            <h3 class="feature-title">Timings</h3>
+            <p>Mon - Sun Open 24 Hrs</p>
+          </div>
+        </div>
+      </div>
+    
+    
+      </section>
+
+
+      <div class="training-items d-flex flex-row">
+
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/motor1.jpg' %}" class="card-img-top" alt="...">
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/motor2.jpg' %}" class="card-img-top" alt="...">
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'images/motor3.jpg' %}" class="card-img-top" alt="...">
+      </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/motor4.jpg' %}" class="card-img-top" alt="...">
+         </div>
+         <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/motor5.jpg' %}" class="card-img-top" alt="...">
+         </div>
+</div>
+
+  <!--Hero 1 End-->
+
+{% endblock %}
